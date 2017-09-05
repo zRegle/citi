@@ -196,13 +196,13 @@
                         zIndex: 5
                     }],
                     title: {
-                        text: '单位：百万',
+                        text: '资产价值：百万',
                         align: 'high'
                     }
                 },
                 yAxis: {
                     title: {
-                        text: null
+                        text: '违约概率'
                     }
                 },
                 tooltip: {
@@ -211,7 +211,7 @@
                 series: [{
                     type: 'areaspline',
                     data: e,
-                    name: '资产价值概率',
+                    name: '资产价值概率密度',
                     zoneAxis: 'x',
                     zones: [{
                         value: cost,
