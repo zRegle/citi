@@ -1,0 +1,84 @@
+@font-face {
+    font-family:myFont;
+    src: url("../fonts/PingFang.ttf")
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(248,248,248);
+    font-family: myFont;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand img {
+    height: 100%;
+}
+.navbar-brand {
+    padding: 10px 15px;
+}
+
+#navbar {
+    position: sticky;
+}
+
+.jumbotron {
+    min-height: 500px;
+    margin-bottom: 0;
+
+    padding: 40px 40px 60px 40px;
+    color: #fff;
+}
+
+#glfb {
+    background-image: url(../img/function/back1.png);
+}
+
+#pxy {
+    background-image: url(../img/function/back2.png);
+}
+
+
+.jumbotron .tittle {
+    font-size: 24px;
+    margin-bottom: 40px;
+
+    padding-bottom: 10px;
+    padding-right: 50px;
+    border-bottom: 1px solid #2aebcc;
+    width: max-content;
+}
+.jumbotron .row {
+    min-height: 400px;
+    font-size: 14px;
+}
+.tittle2 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+#probability {
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.explain {
+    border: 1px dashed #fff;
+    padding: 20px;
+    min-height:200px;
+}
+
+#select_bar {
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}

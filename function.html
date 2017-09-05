@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- Bootstrap -->
+    <title>function</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/function.css" rel="stylesheet">
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home.html">
+                <img alt="Brand" src="img/brand.png">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="home.html">首页</a></li>
+                <li><a>/</a></li>
+                <li><a href="function.html">功能展示</a></li>
+                <li><a>/</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 巨幕 -->
+<div class="jumbotron" id="glfb">
+    <div class="tittle">概率分布折线图</div>
+
+    <!-- 缩略图 -->
+    <div class="row">
+        <!-- 图表 -->
+        <div class="col-xs-6 col-md-6">
+            <div id="container" style="min-width:400px;height:400px"></div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <div class="tittle2">当前违约概率值</div>
+            <div id="probability"></div>
+            <div class="explain">通过收集的各个金融市场数据及银行自身输入的经营数据，预测未来可能的资产价值分布。利用的KMV模型的原理，得出该商业银行资不抵债造成的可能违约概率。</div>
+        </div>
+    </div>
+</div>
+<div class="jumbotron" id="pxy">
+    <div class="tittle">偏效应分析</div>
+
+    <!-- 缩略图 -->
+    <div class="row">
+        <!-- 图表 -->
+        <div id="offset_effect" class="col-xs-6 col-md-6">
+            <div id="container2" style="min-width:400px;height:400px"></div>
+            <select id="select_bar">
+                    <option>国债</option>
+                    <option>企业债</option>
+                    <option>收、受益权</option>
+                    <option>信托贷款</option>
+                    <option>委托贷款</option>
+                    <option>交易所委托债权</option>
+                    <option>带回购条款的股权性融资</option>
+                    <option>信贷资产转让</option>
+                    <option>应收账款</option>
+                    <option>私募债权</option>
+                    <option>票据类</option>
+                    <option>信用证</option>
+                    <option>其他非标准化债券类投资</option>
+                    <option>现金及银行存款</option>
+                    <option>货币市场工具</option>
+                    <option>权益类投资</option>
+            </select>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <div class="explain">这里的偏效应由两部分组成：
+                第一部分即当使用者对某个特定市场预期收益值不同时，分别对应的违约概率的呈现；第二部分是当该特定市场的真实收益率偏离使用者预期收益率，但偏离值非常小时，违约概率的改变（引入了导数的概念）
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/function.js" charset="GB2312"></script>
+</body>
+</html>
