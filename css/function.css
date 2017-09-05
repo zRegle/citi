@@ -15,6 +15,7 @@ body {
 
 .navbar {
     margin-bottom: 0;
+    position: inherit;
 }
 
 .navbar-brand img {
@@ -24,8 +25,9 @@ body {
     padding: 10px 15px;
 }
 
-#navbar {
-    position: sticky;
+.navbar.sticky {
+    position: fixed;
+    top: 0;
 }
 
 .jumbotron {

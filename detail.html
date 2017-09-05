@@ -27,6 +27,12 @@
 
         .navbar {
             margin-bottom: 0;
+            position: inherit;
+        }
+
+        .navbar.sticky {
+            position: fixed;
+            top: 0;
         }
 
         .navbar-brand img {
@@ -36,9 +42,6 @@
             padding: 10px 15px;
         }
 
-        #navbar {
-            position: sticky;
-        }
 
         .jumbotron {
             min-height: 230px;
@@ -303,5 +306,7 @@
         });
     });
 </script>
+<!-- 导航栏吸顶 -->
+<script src="js/navbar.js"></script>
 </body>
 </html>

@@ -20,6 +20,7 @@
 
         .navbar {
             margin-bottom: 0;
+            position: inherit;
         }
 
         .navbar-brand img {
@@ -30,8 +31,9 @@
             padding: 10px 15px;
         }
 
-        #navbar {
-            position: sticky;
+        .navbar.sticky {
+            position: fixed;
+            top: 0;
         }
     </style>
 
@@ -52,7 +54,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="home.html">首页</a></li>
                 <li><a>/</a></li>
-                <li><a href="#">功能展示</a></li>
+                <li><a href="function.html">功能展示</a></li>
                 <li><a>/</a></li>
                 <li><a href="team.html">团队介绍</a></li>
             </ul>
@@ -281,5 +283,7 @@
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/team.js"></script>
+<!-- 导航栏吸顶 -->
+<script src="js/navbar.js"></script>
 </body>
 </html>
