@@ -66,15 +66,16 @@ body {
 }
 
 #probability {
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 20px 20px 20px 0 ;
+    font-size: 40px;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
 }
 
 .explain {
     border: 1px dashed #fff;
     padding: 20px;
+    margin-bottom: 20px;
     min-height:200px;
 }
 

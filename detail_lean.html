@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <title>detail_lean</title>
+
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home1.html">
+                <img alt="Brand" src="img/brand.png">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <!--                <li><a href="home1.html">首页</a></li>-->
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    产品介绍
+                                    <!-- <b class="caret"></b>-->
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="detail_instruction.html">产品简介</a></li>
+                                    <li><a href="detail_guide.html">使用向导</a></li>
+                                    <li><a href="detail_rate.html">违约概率分析</a></li>
+                                    <li><a href="detail_lean.html">偏效应分析</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <!-- 下拉 -->
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    功能展示
+                                    <!--<b class="caret"></b>-->
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="function3.html">资产负债表</a></li>
+                                    <li><a href="function1.html">概率分布折线图</a></li>
+                                    <li><a href="function2.html">偏效应分析</a></li>
+                                    <!--                                    <li class="divider"></li>
+                                                                        <li><a href="#">分离的链接</a></li>-->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="team.html">团队介绍</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- 巨幕 -->
+    <div class="jumbotron"  id="lean">
+        <div id="text_box">
+            偏效应分析
+        </div>
+    </div>
+
+
+<!-- 截图及说明 -->
+<div class="row">
+    <div class="col-xs-1 col-md-2"></div>
+
+    <!-- 截图 -->
+    <div class="col-xs-5 col-md-4 img_col">
+        <img  alt="产品简介" class="img-thumbnail screenshot" src="img/jianjie.png">
+    </div>
+
+    <div class="col-xs-5 col-md-4 img_col" id="content_col">
+        <!-- 说明 -->
+        <div id="explain">
+            <span class="dot">·</span>考虑到使用者对某个市场的预期收益率可能有明确预期，我们引入了偏效应的概念。<br><br>
+            <span class="dot">·</span>偏效应图示可以明确的展现出当某一市场的收益率发生变化的时候，违约概率的变化率将会发生多大的波动，这将对于投资者的决策产生巨大的帮助。
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    </body>
+</html>

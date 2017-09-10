@@ -1,0 +1,91 @@
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.jumbotron {
+    min-height: 230px;
+    margin-bottom: 30px;
+    height: 40%;
+    padding: 0;
+}
+
+
+#text_box{
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(255,249,219);
+    text-shadow: -2px -2px 20px rgb(93,23,121);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#explain {
+    margin-left: 20px;
+    color: rgb(94,94,94);
+    font-size: 26.67px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.keyword{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.gray {
+    color: #fff;
+    font-size: 50px;
+    padding: 0 12px;
+    border-radius: 20px;
+    line-height: 2;
+    background-color: gray;
+}
+
+
+.red {
+    color: #fff;
+    font-size: 50px;
+    padding: 0 12px;
+    border-radius: 20px;
+    line-height: 2;
+    background-color: #ed2f67;
+}
+
+.yellow {
+    background-color: #ecb62d;
+}
+
+.dot {
+    margin-left: -24px;
+}
+
+
+
+#introduction {
+    /*background: linear-gradient(90deg, #ed2f67, #ff854b);  标准的语法 */
+    background-image: url(../img/detail/introduction_02.gif);
+}
+#guide {
+    /*background: linear-gradient(90deg, #2ded9f, #2aebcc);  标准的语法 */
+    background-image: url(../img/detail/use_02.gif);
+}
+#rate {
+    /*background: linear-gradient(90deg, #2e7bee, #4aa3ff);  标准的语法 */
+    background-image: url(../img/detail/wyglfx_02.gif);
+}
+#lean {
+    /* background: linear-gradient(90deg, #ecb62d, #d5ef3e); 标准的语法 */
+    background-image: url(../img/detail/pxyfx_02.gif);
+}
+
+.screenshot {
+    padding: 0;
+    display: inline-block;
+    /*            border: 2px blue dashed;*/
+    width: 100%;
+}
+

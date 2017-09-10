@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- Bootstrap -->
+    <title>function1</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-image: url(img/function/back1.png);
+            background-attachment:fixed;
+        }
+
+        #container {
+            min-height: 500px;
+            margin-bottom: 0;
+            padding-top: 50px;
+        }
+
+        #title {
+            color: rgb(255,255,255);
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgb(255,255,255);
+            width: max-content;
+            /*margin-left: -50px;*/
+        }
+
+        #table {
+            box-shadow: 0 0 20px 0 #abcdef  inset;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+
+        th {
+            text-align: right;
+        }
+
+        .table_tittle {
+            text-align: center;
+        }
+
+
+        .explain {
+            color: rgb(252,252,252);
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        #explain1{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home1.html">
+                <img alt="Brand" src="img/brand.png">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <!--                <li><a href="home1.html">首页</a></li>-->
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    产品介绍
+                                    <!-- <b class="caret"></b>-->
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="detail_instruction.html">产品简介</a></li>
+                                    <li><a href="detail_guide.html">使用向导</a></li>
+                                    <li><a href="detail_rate.html">违约概率分析</a></li>
+                                    <li><a href="detail_lean.html">偏效应分析</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <!-- 下拉 -->
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    功能展示
+                                    <!--<b class="caret"></b>-->
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="function3.html">资产负债表</a></li>
+                                    <li><a href="function1.html">概率分布折线图</a></li>
+                                    <li><a href="function2.html">偏效应分析</a></li>
+                                    <!--                                    <li class="divider"></li>
+                                                                        <li><a href="#">分离的链接</a></li>-->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="team.html">团队介绍</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- 缩略图 -->
+    <div class="row" id="container">
+        <div class="col-xs-2 col-md-2"></div>
+        <!-- 图表 -->
+        <div class="col-xs-8 col-md-8">
+            <div id="title">资产负债表</div>
+
+            <div  id="table" class="table-responsive">
+                <table class="table">
+                    <tr><th colspan="4" class="table_tittle">新编资产负债表</th></tr>
+                    <tr><th colspan="4">单位：人民币百万元</th></tr>
+                    <tr><td>项目</td><td>金额</td><td>项目</td><td>金额</td></tr>
+                    <tr><td>资产</td><td></td><td>负债</td><td></td></tr>
+                    <tr><td>原资产负债表内总资产</td><td>5，942，311</td><td>原资产负债表内总负债</td><td>5，538，949</td></tr>
+                    <tr><td>债券</td><td>1，039，635</td><td>理财业务资金</td><td>2，375，766</td></tr>
+                    <tr><td>非标债权类资产</td><td>415，522</td><td>负债合计</td><td></td></tr>
+                    <tr><td>现金及银行存款</td><td>394，852</td><td>所有者权益</td><td></td></tr>
+                    <tr><td>货币市场工具</td><td>312，176</td><td>原资产负债表内所有者权益</td><td>403，362</td></tr>
+                    <tr><td>权益类资产</td><td>178，182</td><td>所有者权益合计</td><td>403，362</td></tr>
+                    <tr><td>其他</td><td>35，399</td><td></td><td></td></tr>
+                    <tr><td>资产合计</td><td>8，318，077</td><td>负债及所有者权益合计</td><td>8318077</td></tr>
+                </table>
+            </div>
+
+            <div class="explain" id="explain1">
+                Ignition系统会根据您的经营数据重构资产负债表，如上图所示。
+            </div>
+
+        </div>
+    </div>
+
+
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
