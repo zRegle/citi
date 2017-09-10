@@ -2,46 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <!-- Bootstrap -->
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Team</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
     <link href="css/team.css" rel="stylesheet">
-    <style>
-
-        html {
-            height: 100%;
-        }
-
-        body {
-            height: 100%;
-        }
-
-        .navbar {
-            margin-bottom: 0;
-            position: inherit;
-        }
-
-        .navbar-brand img {
-            height: 100%;
-        }
-
-        .navbar-brand {
-            padding: 10px 15px;
-        }
-
-        .navbar.sticky {
-            position: fixed;
-            top: 0;
-        }
-    </style>
-
-
+    <link href="css/navbar.css" rel="stylesheet">
 </head>
 <body>
 <!-- 导航栏 -->
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="home.html">
@@ -52,238 +20,359 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="home.html">首页</a></li>
-                <li><a>/</a></li>
-                <li><a href="function.html">功能展示</a></li>
-                <li><a>/</a></li>
+
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="home.html" class="dropdown-toggle" data-toggle="dropdown">
+                                    首页
+                                    <!-- <b class="caret"></b>-->
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="detail_introduction.html">产品简介</a></li>
+                                    <li><a href="detail_guide.html">使用向导</a></li>
+                                    <li><a href="detail_rate.html">违约概率分析</a></li>
+                                    <li><a href="detail_lean.html">偏效应分析</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 下拉 -->
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    功能展示
+                                    <!--<b class="caret"></b>-->
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="function1.html">资产负债表</a></li>
+                                    <li><a href="function1.html">概率分布折线图</a></li>
+                                    <li><a href="partial.html">偏效应分析</a></li>
+                                    <!--                                    <li class="divider"></li>
+                                                                        <li><a href="#">分离的链接</div></li>-->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="team.html">团队介绍</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <div class="header">
-    <div class="info">
-        <h1 style="color: white">团队介绍</h1>
-        <div class="team_intro">
-            Ignition团队，由14名成员组成，我们怀揣着梦想，希望创造一番天地。在Igntion的项目构想形成以后，我们项目组依据理论建模，算法实现，数据收集，数据存储，产品设计，应用实现与结果呈现这几个工作模块，分为设计组，客户端组，Web组，理论组，在指导老师张培老师的悉心指导下，有条不紊地进行项目实施，及时有效解决项目开发中遇到的各种问题，集思广益，共同攻克技术难题。
+    <div class="row">
+        <div class="col-xs-1 col-md-4"></div>
+        <div class="col-xs-10 col-md-8 title">
+            <img class="img-responsive" src="img/ignition-team.png">
         </div>
     </div>
-    <div class="people">
-        <img class="people-img" src="img/people.png">
-    </div>
-</div>
-
-<div class="avatars">
-    <div id="1" class="avatars-placeholder">
-        <div class="avatars-outline" style="margin-left: 25px">
-            <img class="circle-outline" src="img/circle.png">
-        </div>
-        <img class="avatars-img" style="width: 200px" src="img/head1.png">
-        <div class="team-name" style="margin-left: 35%">
-            设计组
-        </div>
-    </div>
-    <div id="2" class="avatars-placeholder">
-        <div class="avatars-outline">
-            <img class="circle-outline" src="img/circle.png">
-        </div>
-        <img class="avatars-img" src="img/head2.png">
-        <div class="team-name">
-            客户端组
-        </div>
-    </div>
-    <div id="3" class="avatars-placeholder">
-        <div class="avatars-outline">
-            <img class="circle-outline" src="img/circle.png">
-        </div>
-        <img class="avatars-img" src="img/head3.png">
-        <div class="team-name">
-            网页组
-        </div>
-    </div>
-    <div id="4" class="avatars-placeholder">
-        <div class="avatars-outline">
-            <img class="circle-outline" src="img/circle.png">
-        </div>
-        <img class="avatars-img" src="img/head4.png">
-        <div class="team-name">
-            理论组
+    <div class="row">
+        <div class="col-xs-1 col-md-4"></div>
+        <div class="col-xs-10 col-md-4 header-intro">
+            由14名成员组成，我们怀揣着梦想，希望创造一番天地
         </div>
     </div>
 </div>
-
-<div id="team1" class="team-member-info" style="display: block">
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/马昕.jpg"/>
-            </div>
-            <div class="member-description">
-                <h4>马昕</h4>
-                作为队长，负责与老师以及各个职能小组之间的沟通协调，项目的策划管理实施以及相关文档的书写。
-            </div>
+<div class="intro">
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-2 col-md-1 left-angle">
+            <img class="angle" src="img/team-angle1.png">
+        </div>
+        <div class="col-xs-7 col-md-3"></div>
+        <div class="col-xs-2 col-md-1 right-angle">
+            <img class="angle" src="img/team-angle2.png">
         </div>
     </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/乔晨冉.jpg"/>
-            </div>
-            <div class="member-description">
-                <h4>乔晨冉</h4>
-                负责PC端、Web端的产品设计，包括结构梳理与原型设计，同时协调开发、设计、算法各方。
-            </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-10 col-md-5 team-intro">
+            &nbsp;&nbsp;在Ignition的项目构想形成后，我们项目依据理论建模，算法实现，数据收集，数据存储，产品设计，引用实现与结果呈现这几个模块，分成设计组、客户端组、Web组、理论组，在指导老师张培的悉心指导下，有条不紊地工作，及时有效解决项目开发中遇到的各种问题，集思广益，共同攻克技术难题。
         </div>
     </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/赵子婧.jpg"/>
-            </div>
-            <div class="member-description">
-                <h4>赵子婧</h4>
-                web端UI设计，呈现最精准的产品定位以及最舒适的用户体验。
-            </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-2 col-md-1 left-angle">
+            <img class="angle" src="img/team-angle4.png">
+        </div>
+        <div class="col-xs-7 col-md-3"></div>
+        <div class="col-xs-2 col-md-1 right-angle">
+            <img class="angle" src="img/team-angle3.png">
         </div>
     </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/王艺.jpg"/>
+</div>
+<div style="margin-top: 2%">
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-10 col-md-6">
+            <div class="avatar" id="1" style="width: 26%">
+                <img class="avatar-img" src="img/head1.png">
+                <div class="text">
+                    设计组
+                </div>
             </div>
-            <div class="member-description">
-                <h4>王艺</h4>
-                PC端UI设计，致力于呈现最友好的交互见面和最舒适的用户体验。
+            <div class="avatar" id="2">
+                <img class="avatar-img" src="img/head2.png">
+                <div class="text">
+                    PC组
+                </div>
+            </div>
+            <div class="avatar" id="3">
+                <img class="avatar-img" src="img/head3.png">
+                <div class="text">
+                    网页组
+                </div>
+            </div>
+            <div class="avatar" id="4">
+                <img class="avatar-img" src="img/head4.png">
+                <div class="text">
+                    理论组
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<div id="team2" class="team-member-info">
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/林泽昊.jpg"/>
+<div class="members" id="design" style="display: block">
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/马昕.jpg">
             </div>
-            <div class="member-description">
-                <h4>林泽昊</h4>
-                主要负责服务器端开发，参与核心算法构建和实现。并负责客户端算法效果展示和实现
-            </div>
-        </div>
-    </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img  src="img/team-member/沈达.jpg"/>
-            </div>
-            <div class="member-description">
-                <h4>沈达</h4>
-                负责pc端的程序设计，负责包括但不限于登录注册，新建分析，历史分析查询等功能，涉及动画渲染，数据库设计，网络异步等相关技术。
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">马昕</div>
+                <div class="mem-text">
+                    在本项目中主要负责团队的组织与管理,各个小组之间的协调，项目的规划，项目实施的监督与改进。并且负责一部分的文档编写与校对以及参与了对于Ignition项目部分技术细节可行性的分析与研究。
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div id="team3" class="team-member-info">
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/韩路.jpg"/>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/乔晨冉.jpg">
             </div>
-            <div class="member-description">
-                <h4>韩路</h4>
-                负责后台开发，利用深度学习方法进行数据回归，以及可视化分析
-            </div>
-        </div>
-    </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/叶振宇.jpg"/>
-            </div>
-            <div class="member-description">
-                <h4>叶振宇</h4>
-                主要负责后台的用户管理系统，以及利用爬虫技术对数据进行实时更新和处理，同时参与算法的实现，过程中使用了异步处理以及消息队列的方法
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">乔晨冉</div>
+                <div class="mem-text">
+                    负责与前端、后台、PC、设计、算法、理论各方对接，整理信息、协调工作、统筹开发。完成产品整体需求分析与信息结构设计同时负责PC端、Web端的技术说明文档撰写与原型设计。
+                </div>
             </div>
         </div>
     </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/王超.jpg"/>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/赵子婧.jpg">
             </div>
-            <div class="member-description">
-                <h4>王超</h4>
-                web端开发组成员，负责web页面开发，数据可视化，网页的排版以及自适应
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">赵子婧</div>
+                <div class="mem-text">
+                    web端UI设计，能够合理安排时间，和组员讨论好每个细节，为用户呈现呈现最精准的产品定位以及最舒适的用户体验。
+                </div>
             </div>
         </div>
     </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/梁梓睿.png"/>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/王艺.jpg">
             </div>
-            <div class="member-description">
-                <h4>梁梓睿</h4>
-                web端开发组成员，负责web页面开发，包括网页布局排版，逻辑功能实现以及数据可视化
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">王艺</div>
+                <div class="mem-text">
+                    负责项目平面视觉设计，根据产品需求，完成产品的整体美术风格、交互设计、界面结构、操作流程等，具体包括项目PC端的界面和UI设计，和交互界面、图标、LOGO、按钮等相关元素的设计与制作。
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<div id="team4" class="team-member-info">
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/张温馨.jpg"/>
+<div class="members" id="pc">
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/林泽昊.jpg">
             </div>
-            <div class="member-description">
-                <h4>张温馨</h4>
-                统筹安排经管同学的工作，包括给出系统算法和撰写商业计划书
-            </div>
-        </div>
-    </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/肖繁艺.jpg"/>
-            </div>
-            <div class="member-description">
-                <h4>肖繁艺</h4>
-                在项目筹划过程中参与项目核心模型的构建；在项目书编写过程中明确目标市场定位、项目的生产收入模式、项目意义等，着重解决了项目的市场营销方式的问题；在项目实施过程中负责页面美工。
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">林泽昊</div>
+                <div class="mem-text">
+                    主要负责服务器端开发，参与核心算法构建和实现。并负责客户端算法效果展示和实现
+                </div>
             </div>
         </div>
     </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img src="img/team-member/李昱言.png"/>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/沈达.jpg">
             </div>
-            <div class="member-description">
-                <h4>李昱言</h4>
-                负责构建金融模型，编写和修改商业计划书，参与产品的制作
-            </div>
-        </div>
-    </div>
-    <div class="member">
-        <div class="member-intro">
-            <div class="member-photo">
-                <img  src="img/team-member/徐雨楠.jpg"/>
-            </div>
-            <div class="member-description">
-                <h4>徐雨楠</h4>
-                主要负责模型创新与偏效应的研究，通过广泛查阅文献资料，我和同伴们对KMV模型进行改良，同时引入了包含影子银行的“新型资产负债表”以此衡量影子银行业务对商业银行造成的风险。此外，在模型的基础上，我提出了偏效应的概念和测度方法。
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">沈达</div>
+                <div class="mem-text">
+                    国际软件学院软件工程系2015级本科生，担任自强安卓组成员，现加入武汉大学国际软件学院大数据云实验室，开发一款基于精准教育的教育类app，已初步投入使用。参与并独立开发多个项目。这个项目内，主要负责pc端的程序设计，负责包括但不限于登录注册，新建分析，历史分析查询等功能，涉及动画渲染，数据库设计，网络异步等相关技术。
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="footer" style="height: 50px">
+<div class="members" id="web">
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/韩路.jpg">
+            </div>
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">韩路</div>
+                <div class="mem-text">
+                    武汉大学国际软件学院2015级本科生，耐心，爱钻研，敢担责，拥有较强的数学能力，在该项目中负责技术交流对接与核心算法的实现，神经网络曲线回归的编写，并兼后台的开发、部署与测试
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/叶振宇.jpg">
+            </div>
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">叶振宇</div>
+                <div class="mem-text">
+                    主要负责后台的一部分工作，主要实现了用户的登陆注册以及数据的实时更新等功能，在这当中利用了消息队列的方法来完成数据的更新，同时负责服务器方面的部署和维护等相关工作，在这当中感觉受益匪浅。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/王超.jpg">
+            </div>
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">王超</div>
+                <div class="mem-text">
+                    2015级武汉大学国际软件学院本科生，在本项目中为web前端组长，包括网页基本布局、插件选择、响应式页面、网页动画的实现、任务分配等。开发过程中一直保持与产品经理及设计人员沟通，力求呈现更优秀的网页端。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/梁梓睿.png">
+            </div>
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">梁梓睿</div>
+                <div class="mem-text">
+                    2015级武汉大学国际软件学院本科生，在本项目中负责web前端的开发，包括网页基本布局、响应式页面、网页动画的实现，主要使用了HTML+CSS+JavaScript的架构。开发过程中一直保持与产品经理及设计人员沟通，力求呈现更优秀的网页端。
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
+<div class="members" id="theory">
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/张温馨.jpg">
+            </div>
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">张温馨</div>
+                <div class="mem-text">
+                    理论组负责人，统筹安排经管同学的工作，确保理论组高效高质量的完成工作；负责确定项目主题、给出系统算法、构建核心模型和撰写商业计划书，确保算法和商业计划书的质量。并及时与产品组及指导老师交流沟通，不断完善产品。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/徐雨楠.jpg">
+            </div>
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">徐雨楠</div>
+                <div class="mem-text">
+                    主要负责模型创新与偏效应的研究，通过广泛查阅文献资料，我和同伴们对KMV模型进行改良，同时引入了包含影子银行的“新型资产负债表”以此衡量影子银行业务对商业银行造成的风险。此外，在模型的基础上，我提出了偏效应的概念和测度方法。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/李昱言.png">
+            </div>
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">李昱言</div>
+                <div class="mem-text">
+                    工作主要负责项目计划书背景方面的书写，负责大部分的项目翻译工作。参与讨论产品的模型构建，协助完成产品偏效应的描述。与国软方面产品负责人对接，商量解决产品的技术问题。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-11 col-md-6 mem-intro">
+            <div class="col-xs-6 col-md-4">
+                <img class="mem-photo" src="img/team-member/肖繁艺.jpg">
+            </div>
+            <div class="col-xs-6 col-md-8 member">
+                <div class="name">肖繁艺</div>
+                <div class="mem-text">
+                    在项目筹划过程中参与项目核心模型的构建，并且根据历年数据对算法进行试算；在项目书编写过程中明确产品的目标市场定位、项目的生产收入模式、项目意义等，着重解决了产品的市场营销方式的问题；在项目实施过程中和小伙伴们一起对产品页面布局进行设计并且负责产品的整体美化。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/team.js"></script>
-<!-- 导航栏吸顶 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/navbar.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".avatar").click(function () {
+            //set all members info to default
+            $(".avatar").css("width","22%");
+            $(".members").css("display","none");
+            // //set the clicking avatar and its corresponding members info
+            var group=$(this);
+            group.css("width","26%");
+            var id=group.attr("id");
+            switch (id){
+                case '1':
+                    $("#design").fadeIn(300);
+                    break;
+                case '2':
+                    $("#pc").fadeIn(300);
+                    break;
+                case '3':
+                    $("#web").fadeIn(300);
+                    break;
+                case '4':
+                    $("#theory").fadeIn(300);
+                    break;
+            }
+        });
+    });
+</script>
 </body>
 </html>

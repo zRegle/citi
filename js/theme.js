@@ -1,23 +1,9 @@
-/**
- * Created by zjhzw on 2017/9/9.
- */
 Highcharts.theme = {
-    colors: ['#7798BF', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
+    colors: ['#FFFFFF', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
         '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'
     ],
     chart: {
-        backgroundColor: null/*{
-            linearGradient: {
-                x1: 0,
-                y1: 0,
-                x2: 1,
-                y2: 1
-            },
-            stops: [
-                [0, '#2a2a2b'],
-                [1, '#2a2a2b']
-            ]
-        }*/,
+        backgroundColor: null,
         style: {
             fontFamily: '\'Unica One\', sans-serif'
         },
@@ -37,27 +23,27 @@ Highcharts.theme = {
         }
     },
     xAxis: {
-        gridLineColor: '#707073',
+        gridLineColor: '#FFFFFF',
         labels: {
             style: {
-                color: '#E0E0E3'
+                color: '#FFFFFF'
             }
         },
-        lineColor: '#707073',
+        lineColor: '#FFFFFF',
         minorGridLineColor: '#505053',
-        tickColor: '#707073',
+        tickColor: '#FFFFFF',
         title: {
             style: {
-                color: '#A0A0A3'
+                color: '#FFFFFF'
 
             }
         }
     },
     yAxis: {
-        gridLineColor: '#707073',
+        gridLineColor: '#FFFFFF',
         labels: {
             style: {
-                color: '#E0E0E3'
+                color: '#FFFFFF'
             }
         },
         lineColor: '#707073',
@@ -66,7 +52,7 @@ Highcharts.theme = {
         tickWidth: 1,
         title: {
             style: {
-                color: '#A0A0A3'
+                color: '#FFFFFF'
             }
         }
     },
