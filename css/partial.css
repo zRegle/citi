@@ -1,0 +1,61 @@
+body{
+    background-image: url("../img/back2.png");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.container-fluid{
+    height: 100%;
+}
+.row{
+    margin-right: 0;
+    height: 100%;
+}
+.title{
+    color:white;
+    font-weight: bold;
+    font-size: 4em;
+    margin-top: 1%;
+}
+.line{
+    height:5%;
+    background-color:white;
+    border-radius: 10px;
+}
+.explain{
+    font-size: 1.3em;
+    color: white;
+    margin-top: 2%;
+}
+select{
+    background-color: transparent;
+}
+.chart{
+    margin-top: 1%;
+    height: 50%;
+}
+.chart-intro{
+    margin-left: -3%;
+}
+.chart-explain{
+    color: white;
+    margin-left: 10%;
+    margin-top: -10%;
+    width: 80%;
+    font-size: 1.1em;
+}
+option{
+    background-color: rgba(0,0,0,1);
+}
+.top-angle{
+    width: 35%;
+    margin-left: -10%;
+    margin-top: -10%;
+}
+.bottom-anlge{
+    width: 35%;
+    margin-left: 72%;
+    margin-top: -10%;
+}
+#container3 > div, #container2 > div{
+    margin-left: -3%;
+}

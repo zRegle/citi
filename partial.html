@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- Bootstrap -->
+    <title>function</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/partial.css" rel="stylesheet">
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home.html">
+                <img alt="Brand" src="img/brand.png">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="home.html" class="dropdown-toggle" data-toggle="dropdown">
+                                    首页
+                                    <!-- <b class="caret"></b>-->
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="detail_introduction.html">产品简介</a></li>
+                                    <li><a href="detail_guide.html">使用向导</a></li>
+                                    <li><a href="detail_rate.html">违约概率分析</a></li>
+                                    <li><a href="detail_lean.html">偏效应分析</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 下拉 -->
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    功能展示
+                                    <!--<b class="caret"></b>-->
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="function1.html">资产负债表</a></li>
+                                    <li><a href="function1.html">概率分布折线图</a></li>
+                                    <li><a href="partial.html">偏效应分析</a></li>
+                                    <!--                                    <li class="divider"></li>
+                                                                        <li><a href="#">分离的链接</div></li>-->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="team.html">团队介绍</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div style="height: 15%">
+        <div class="row">
+            <div class="col-xs-1 col-md-3"></div>
+            <div class="col-xs-11 col-md-4 title" style="height: 100%">
+                <div>偏效应分析</div>
+                <div class="col-xs-11 col-md-7 line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="explain">
+        <div class="row">
+            <div class="col-xs-1 col-md-3"></div>
+            <div class="col-xs-11 col-md-7">
+                因为我们系统主要为商业银行或者金融监管机构服务。考虑到使用者对某个市场的预期收益率可能有明 确预期，我们引入了偏效应的概念。
+            </div>
+        </div>
+        <div class="row" style="margin-top: 1.5%">
+            <div class="col-xs-1 col-md-3"></div>
+            <div class="col-xs-11 col-md-4">
+                <span>请选择对应市场</span>
+                <select id="select_bar">
+                    <option>国债</option>
+                    <option>企业债</option>
+                    <option>收、受益权</option>
+                    <option>信托贷款</option>
+                    <option>委托贷款</option>
+                    <option>交易所委托债权</option>
+                    <option>带回购条款的股权性融资</option>
+                    <option>信贷资产转让</option>
+                    <option>应收账款</option>
+                    <option>私募债权</option>
+                    <option>票据类</option>
+                    <option>信用证</option>
+                    <option>其他非标准化债券类投资</option>
+                    <option>现金及银行存款</option>
+                    <option>货币市场工具</option>
+                    <option>权益类投资</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="chart">
+        <div class="row">
+            <div class="col-xs-1 col-md-2"></div>
+            <div id="container3" class="col-xs-12 col-md-5" style="height: 100%;padding-left:-5%;"></div>
+            <div class="col-xs-11 col-md-4 chart-intro">
+                <img class="top-angle" src="img/angle1.png">
+                <div class="chart-explain">
+                    您可以选择某个特定市场，对该市场的收益情况进行预测， 将鼠标移动至曲线上您的预期收益率点，可以看到对应的违约概率。<br><br>
+                    以A银行为例，A银行的分析部门预测未来国债的年收益率为5%，运用偏效应分析功能得到对应的违约概率为11.11%。表明若A银行预期未来国债收益率为5%，而对其他资产收益率不确定时，违约概率为11.11%
+                </div>
+                <img class="bottom-anlge" src="img/angle2.png">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 3%">
+            <div class="col-xs-1 col-md-2"></div>
+            <div id="container2" class="col-xs-12 col-md-5" style="height: 100%"></div>
+            <div class="col-xs-11 col-md-4 chart-intro">
+                <img class="top-angle" src="img/angle1.png">
+                <div class="chart-explain">
+                    您可以选择某个市场，输入预期效益率，得到违约概率波动率。它衡量了未来实际收益略微低于您的预期效益率时，整体违约概率收到的影响。<br><br>
+                    以A银行为例，A银行的分析部门预测未来国债的年收益率为5%，运用偏效应分析功能得到对应的违约概率波动率为11.11%。表明若国债市场真是收益率略微低于5%，A银行的整体违约概率会上升，并且按11.11%的速度上升。
+                </div>
+                <img class="bottom-anlge" src="img/angle2.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="js/theme.js"></script>
+<script>
+    var temp;
+    var types=[
+        "national_debt",
+        "enterprise_debt",
+        "trust_rate",
+        "trust_debt",
+        "debt_foundation",
+        "trust_debtRights",
+        "trust_stock",
+        "trust_transfer",
+        "receive",
+        "self_debtRights",
+        "bill",
+        "credit",
+        "other",
+        "cash",
+        "currency_market_tool",
+        "asset"
+    ];
+    function get_data(container,type,name) {
+        $.post(
+            "http://39.108.217.238/partial_history/",
+            {
+                which:type
+            },
+            function(data) {
+                var points=data.derivative;
+
+                temp=points;
+
+                var x=points[0];
+                var y=points[1];
+                var e=[];
+                for(var i=0;i<x.length;i++){
+                    e[i]=[];
+                    e[i][0]=x[i];
+                    e[i][1]=y[i];
+                }
+                var colors = Highcharts.getOptions().colors;
+                Highcharts.chart(container, {
+                    credits: {
+                        enabled: false
+                    },
+                    title: {
+                        text: '预期收益率对违约概率波动率的影响'
+                    },
+                    xAxis: {
+                        title: {
+                            text: '收益率：%',
+                            align: 'high'
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: '违约概率的波动率'
+                        }
+                    },
+                    tooltip: {
+                        formatter: function () {
+                            return '收益率：'+ Highcharts.numberFormat(this.x,2,'.',',') +'%<br/>'+
+                                '波动率：' + '<b>'+ Highcharts.numberFormat(this.y, 2) + '</b>';
+
+                        }
+                    },
+                    series: [
+                        {
+                            type: 'spline',
+                            data: e,
+                            name: name
+                        }
+                    ]
+                });
+            }
+        );
+    }
+    function get_data2(container,type,name) {
+        $.post(
+            "http://39.108.217.238/partial_history/",
+            {
+                which:type
+            },
+            function(data) {
+                var points=data.assets;
+
+                temp=points;
+                console.log(temp);
+
+                var x=points[0];
+                var y=points[1];
+                var e=[];
+                for(var i=0;i<x.length;i++){
+                    e[i]=[];
+                    e[i][0]=x[i];
+                    e[i][1]=y[i];
+                }
+                var colors = Highcharts.getOptions().colors;
+                Highcharts.chart(container, {
+                    credits: {
+                        enabled: false
+                    },
+                    title: {
+                        text: '	预期收益率对违约概率的影响'
+                    },
+                    xAxis: {
+                        title: {
+                            text: '收益率：%',
+                            align: 'high'
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: '违约概率'
+                        }
+                    },
+                    tooltip: {
+                        formatter: function () {
+                            return '收益率：'+ Highcharts.numberFormat(this.x,2,'.',',') +'%<br/>'+
+                                '违约概率：' + '<b>'+ Highcharts.numberFormat(this.y, 2) + '</b>';
+
+                        }
+                    },
+                    series: [
+                        {
+                            type: 'spline',
+                            data: e,
+                            name: name
+                        }
+                    ]
+                });
+            }
+        );
+    }
+
+
+
+
+    $(document).ready(function(){
+        get_data("container2","national_debt","国债");
+        get_data2("container3","national_debt","国债");
+
+        $("#select_bar").change(function () {
+            var containerA="container2";
+            var containerB="container3";
+            var selected=$("#select_bar").find("option:selected");
+            var type=types[selected.index()];
+            var name=selected.html();
+
+            get_data(containerA,type,name);
+            get_data2(containerB,type,name);
+        });
+    });
+</script>
+</body>
+</html>
