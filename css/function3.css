@@ -1,0 +1,55 @@
+body {
+    background-image: url(../img/back2.jpg);
+    background-attachment:fixed;
+}
+
+#container {
+    min-height: 500px;
+    margin-bottom: 0;
+    padding-top: 50px;
+}
+
+#title {
+    color: rgb(255,255,255);
+    font-size: 3.57em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(255,255,255);
+    width: max-content;
+    /*margin-left: -50px;*/
+}
+
+#table {
+    box-shadow: 0 0 20px 0 #abcdef  inset;
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+th {
+    text-align: right;
+}
+
+.table_tittle {
+    text-align: center;
+}
+
+
+.explain {
+    color: rgb(252,252,252);
+    text-align: center;
+    line-height: 1.7;
+}
+
+#explain1{
+    font-size: 2.14em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.row {
+    margin-bottom: 20px;
+}

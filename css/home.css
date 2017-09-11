@@ -1,0 +1,127 @@
+
+@font-face {
+    font-family: "FZSTK";
+    src: url("../fonts/FZSTK/FZSTK.eot"); /* IE9 */
+    src: url("../fonts/FZSTK/FZSTK.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+
+    url("../fonts/FZSTK/FZSTK.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/FZSTK/FZSTK.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+
+    url("../fonts/FZSTK/FZSTK.svg#FZSTK") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    padding-top: 10em;
+    padding-bottom: 0;
+    /*            margin-top: 50px;*/
+    background-image: url(../img/home/home.gif);
+    /*            background-position: 100% 100%;*/
+    background-size: 100% 100%;
+    height: 90%;
+}
+
+.jumbotron img {
+    height: 4.5em;
+}
+
+.jumbotron .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#slogan_col {
+    margin-left: -5em;
+}
+
+#slogan {
+    font-family: FZSTK, PingFang, sans-serif;
+    margin-top: -30px;
+    margin-left: 110px;
+    display: inline-block;
+    text-align: center;
+    font-size: 2.86em;
+    color: rgb(255,244,184);
+}
+
+
+#download {
+    margin-left: 110px;
+    display: inline-block;
+    margin-top: 14em;
+    text-align: center;
+}
+
+#download a {
+    box-shadow: 0 0 20px 5px #aac9ef;
+    font-size: 2.143em;
+    color: rgb(241,241,241);
+}
+
+#download p {
+    margin-top: 20px;
+    font-size: 1.19em;
+    color: rgb(255,244,184);
+}
+
+#detail {
+    margin: 0;
+    padding: 20px 10px;
+    height: 30%;
+}
+
+#detail .col-md-3{
+    height: 100%;
+}
+
+#detail .thumbnail {
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 0;
+    height: 100%;
+    background-color: darkgray;
+}
+
+#detail .caption{
+    margin: 0;
+    position: absolute;
+    padding-left: 20px;
+    top: 20%;
+    color: rgb(255,255,255);
+}
+
+.caption1 {
+    border: 1px solid rgb(255,255,255);
+    border-radius: 50px;
+    font-size: 2em;
+    padding: 2px 15px;
+    margin-bottom: 10px;
+}
+
+.caption1:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(109,109,109);
+}
+
+.caption2 {
+    padding-left: 30px;
+    font-size: 1.31em;
+}
+
+
+.thumbnail > img, .thumbnail a > img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}

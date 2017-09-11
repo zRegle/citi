@@ -1,0 +1,84 @@
+body {
+    background-image: url(../img/back2.jpg);
+    background-attachment:fixed;
+}
+
+
+#glfb {
+    min-height: 500px;
+    margin-bottom: 0;
+    padding: 40px 40px 60px 40px;
+    color: rgb(255,255,255);
+}
+
+#title {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2aebcc;
+    width: max-content;
+    /*margin-left: -50px;*/
+}
+
+
+#chartBox {
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+#probability_col {
+    width: 50%;
+}
+
+#probability {
+    padding: 20px 20px 20px 0 ;
+    font-size: 6em;
+    font-weight: bold;
+    text-align: right;
+}
+
+#probability_title {
+    font-size: 2.86em;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.explain {
+    color: rgb(252,252,252);
+    text-align: center;
+    line-height: 1.7;
+}
+
+#explain1{
+    font-size: 1.9em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#explain2 {
+    font-size: 1.667em;
+}
+
+#explain3 {
+    display: inline-block;
+    font-size: 1.428em;
+    width: 40%;
+    margin-left: 10px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+
+#probability_col {
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 #abcdef  inset;
+    /*            position: relative;
+                top: 50%;
+                transform: translateY(-50%);*/
+}
