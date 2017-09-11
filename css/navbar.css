@@ -1,8 +1,16 @@
 /*全局设定*/
-/*@font-face {
-    font-family:myFont;
-    src: url("../fonts/PingFang.ttf")
-}*/
+@font-face {
+    font-family: "PingFang";
+    src: url("../fonts/PingFang/PingFang.eot"); /* IE9 */
+    src: url("../fonts/PingFang/PingFang.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+
+    url("../fonts/PingFang/PingFang.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/PingFang/PingFang.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+
+    url("../fonts/PingFang/PingFang.svg#PingFang") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
 
 html {
     height: 100%;
@@ -10,7 +18,7 @@ html {
 
 body {
     padding-top: 50px;
-    font-family: sans-serif;
+    font-family: PingFang, sans-serif;
     height: 100%;
     background-color: rgb(248,248,248);
 }
