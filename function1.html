@@ -13,7 +13,7 @@
 
     <style>
         body {
-            background-image: url(img/function/back1.png);
+            background-image: url(img/back2.png);
             background-attachment:fixed;
         }
 
@@ -48,7 +48,7 @@
 
         #probability {
             padding: 20px 20px 20px 0 ;
-            font-size: 7.14em;
+            font-size: 6em;
             font-weight: bold;
             text-align: right;
         }
@@ -215,12 +215,19 @@
 
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/zoom.js"></script>
+
 <script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script>
 <!-- 图表主题 -->
 <script src="js/theme.js"></script>
 
 <script >
     $(document).ready(function(){
+
+
+
+
+
         $.getJSON("http://39.108.217.238/history/",function(data){
             var cost=data.cost;
             var probability=data.probability;
@@ -319,5 +326,6 @@
         });
     });
 </script>
+
 </body>
 </html>
