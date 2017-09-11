@@ -7,6 +7,11 @@
     padding-left: 4.5%;
     margin-top: 5%;
 }
+
+.title .img-responsive {
+    height: 8em;
+}
+
 .row{
     margin-right: 0;
 }
