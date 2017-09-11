@@ -1,16 +1,20 @@
 .header{
-    height: 45%;
+    height: 42%;
     background-image: url("../img/team_02.jpg");
+    background-size: 100%;
 }
 .title{
     padding-left: 4.5%;
     margin-top: 5%;
 }
+.row{
+    margin-right: 0;
+}
 .header-intro{
     color: white;
     font-size: 1.3em;
     margin-top: 3%;
-    padding-left: 3%;
+    text-align: center;
 }
 .angle{
     width: 50%;
@@ -71,17 +75,16 @@
     border-radius: 10px;
 }
 .member{
-    padding-top: 2%;
+    padding-top: 4%;
 }
 .mem-text{
     padding-top: 2%;
     color: rgb(64,64,64);
     font-size: 1.2em;
-    line-height: 200%;
+    line-height: 1.5;
 }
 .name{
     color: rgb(83,83,83);
     font-weight: bold;
     font-size: 2em;
 }
-
