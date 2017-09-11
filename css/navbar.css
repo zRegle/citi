@@ -24,9 +24,9 @@ body {
 }
 
 .navbar-right {
-    font-size: 14px;
-    margin-right: 20%;
-    transform: translateX(-50%);
+    font-size: 1em;
+    margin-right: 10%;
+/*    transform: translateX(-50%);*/
 }
 
 .navbar .navbar-header {

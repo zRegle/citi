@@ -4,6 +4,7 @@
 }
 
 .jumbotron {
+    background-size: 100% 100%;
     min-height: 230px;
     margin-bottom: 30px;
     height: 40%;
@@ -12,7 +13,7 @@
 
 
 #text_box{
-    font-size: 80px;
+    font-size: 5.714em;
     font-weight: bold;
     color: rgb(255,249,219);
     text-shadow: -2px -2px 20px rgb(93,23,121);
@@ -25,20 +26,19 @@
 #explain {
     margin-left: 20px;
     color: rgb(94,94,94);
-    font-size: 26.67px;
+    font-size: 1.9em;
     margin-bottom: 30px;
     line-height: 1.5;
 }
 
 .keyword{
-    font-size: 30px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 
 .gray {
     color: #fff;
-    font-size: 50px;
     padding: 0 12px;
     border-radius: 20px;
     line-height: 2;
@@ -48,7 +48,6 @@
 
 .red {
     color: #fff;
-    font-size: 50px;
     padding: 0 12px;
     border-radius: 20px;
     line-height: 2;
