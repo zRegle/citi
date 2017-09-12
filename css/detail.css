@@ -34,11 +34,11 @@
 .keyword{
     font-size: 1.2em;
     font-weight: bold;
-    line-height: 3;
 }
 
 
 .gray {
+    line-height: 3;
     color: #fff;
     padding: 0 12px;
     border-radius: 20px;
@@ -58,7 +58,7 @@
 }
 
 .dot {
-    font-size: 1.7  em;
+    font-size: 1.7em;
     margin-left: -24px;
 }
 

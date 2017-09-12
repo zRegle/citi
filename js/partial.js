@@ -19,7 +19,7 @@ var types=[
 ];
 function get_data(container,type,name) {
     $.post(
-        "http://39.108.217.238/partial_history/",
+        "http://39.108.217.238:8080/partial_history/",
         {
             which:type
         },
@@ -84,7 +84,7 @@ function get_data(container,type,name) {
 }
 function get_data2(container,type,name) {
     $.post(
-        "http://39.108.217.238/partial_history/",
+        "http://39.108.217.238:8080/partial_history/",
         {
             which:type
         },
