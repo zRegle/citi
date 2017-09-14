@@ -66,19 +66,19 @@
 
 #introduction {
     /*background: linear-gradient(90deg, #ed2f67, #ff854b);  标准的语法 */
-    background-image: url(../img/detail/introduction_02.gif);
+    background-image: url(../img/detail/introduction_02.jpg);
 }
 #guide {
     /*background: linear-gradient(90deg, #2ded9f, #2aebcc);  标准的语法 */
-    background-image: url(../img/detail/use_02.gif);
+    background-image: url(../img/detail/use_02.jpg);
 }
 #rate {
     /*background: linear-gradient(90deg, #2e7bee, #4aa3ff);  标准的语法 */
-    background-image: url(../img/detail/wyglfx_02.gif);
+    background-image: url(../img/detail/wyglfx_02.jpg);
 }
 #lean {
     /* background: linear-gradient(90deg, #ecb62d, #d5ef3e); 标准的语法 */
-    background-image: url(../img/detail/pxyfx_02.gif);
+    background-image: url(../img/detail/pxyfx_02.jpg);
 }
 
 .screenshot {
@@ -87,4 +87,3 @@
     /*            border: 2px blue dashed;*/
     width: 100%;
 }
-
