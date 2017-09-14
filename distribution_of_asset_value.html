@@ -141,7 +141,7 @@
 <script src="js/theme.js"></script>
 <script>
     $(document).ready(function(){
-        $.getJSON("http://39.108.217.238:8080/history/?year=2016",function(data){
+        $.get("http://39.108.217.238:8080/history_2016/", function(data){
             var cost=data.cost;
             var probability=data.probability;
             var points=data.points;
@@ -236,7 +236,10 @@
                     }]
                 }]
             });
-        });
+        },'json')
+
+
+
     });
 </script>
 </body>
