@@ -9,8 +9,8 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
-
-    <title>home</title>
+    <link rel="icon" href="img/icon.ico" type="img/x-ico" />
+    <title>ignition</title>
 
 </head>
 <body>
@@ -102,7 +102,7 @@
             <img src="img/jianjie.png" alt="产品简介">
             <div class="caption">
                 <div class="caption1">产品简介<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
-                <div class="caption2">了解产品详情</div>
+                <!--<div class="caption2">了解产品详情</div>-->
             </div>
         </a>
     </div>
@@ -111,7 +111,7 @@
             <img src="img/xiangdao.png" alt="使用向导">
             <div class="caption">
                 <div class="caption1">使用向导<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
-                <div class="caption2">使用步骤详解</div>
+                <!--<div class="caption2">使用步骤详解</div>-->
             </div>
         </a>
     </div>
@@ -120,7 +120,7 @@
             <img src="img/weiyuegailv.png" alt="违约概率分析">
             <div class="caption">
                 <div class="caption1">违约概率分析<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
-                <div class="caption2">&nbsp;...</div>
+                <!--<div class="caption2">&nbsp;...</div>-->
             </div>
         </a>
     </div>
@@ -129,7 +129,7 @@
             <img src="img/pianxiaoying.png" alt="片效应分析">
             <div class="caption">
                 <div class="caption1">偏效应分析<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
-                <div class="caption2">&nbsp;...</div>
+                <!--<div class="caption2">&nbsp;...</div>-->
             </div>
         </a>
     </div>
@@ -139,7 +139,13 @@
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/zoom.js"></script>
+<script>
+    if(zoom >= 150 ) {
+        $('#download').css('margin-top','3em');
+        $('a.btn').css('font-size','1.2em');
 
+    }
+</script>
 
 </body>
 </html>
