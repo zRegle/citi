@@ -24,10 +24,18 @@ function detectZoom (){
     return ratio;
 };
 var zoom = detectZoom();
-var k = 100/zoom;
-console.log(k);
+console.log(zoom);
 
-if(zoom > 125) {
-    $("body").css("font-size", "100%");
+if(zoom >= 175) {
+    $("body").css("font-size", "85%");
+    $(".navbar-right").css("font-size", "1.2em");
 }
-/*$("html").css("transform","scale("+k+")");*/
+else if(zoom >= 150) {
+    $("body").css("font-size", "90%");
+    $(".navbar-right").css("font-size", "1.2em");
+}
+else if(zoom >= 125) {
+    $("body").css("font-size", "120%");
+}
+var fz = $("body").css("font-size");
+console.log(fz);
