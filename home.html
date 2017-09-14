@@ -116,7 +116,7 @@
             <img src="img/xiangdao.jpg" alt="使用向导">
             <div class="caption">
                 <div class="caption1 line-limit-length">使用向导<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
-                <div class="caption2">guidelines</div>
+                <div class="caption2">guideline</div>
             </div>
         </a>
     </div>
@@ -147,6 +147,13 @@
 <script>
     if(zoom > 150 ) {
         $('#download').css('margin-top','1em');
+    }
+    if(zoom >= 150 ) {
+        $('#download').css('margin-top','3em');
+        $('a.btn').css('font-size','1.2em');
+    }
+    if(height < 800) {
+        $('#download').css('margin-top','3em');
     }
 </script>
 </body>
