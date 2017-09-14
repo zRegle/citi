@@ -41,7 +41,7 @@ if(height < 800) {
     else if(zoom >= 125) {
         $("body").css("font-size", "99%");
     } else {
-        $("body").css("font-size", "100%");
+        $("body").css("font-size", "110%");
     }
 }
 else{
