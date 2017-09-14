@@ -24,18 +24,40 @@ function detectZoom (){
     return ratio;
 };
 var zoom = detectZoom();
+var height = window.screen.height;
 console.log(zoom);
 
-if(zoom >= 175) {
-    $("body").css("font-size", "85%");
-    $(".navbar-right").css("font-size", "1.2em");
+console.log($("body").css("font-size"));
+
+if(height < 900) {
+    if(zoom >= 175) {
+        $("body").css("font-size", "85%");
+        $(".navbar-right").css("font-size", "1.2em");
+    }
+    else if(zoom >= 150) {
+        $("body").css("font-size", "90%");
+        $(".navbar-right").css("font-size", "1.2em");
+    }
+    else if(zoom >= 125) {
+        $("body").css("font-size", "99%");
+    } else {
+        $("body").css("font-size", "100%");
+    }
 }
-else if(zoom >= 150) {
-    $("body").css("font-size", "90%");
-    $(".navbar-right").css("font-size", "1.2em");
+else{
+    if(zoom >= 175) {
+        $("body").css("font-size", "80%");
+    }
+    else if(zoom >= 150) {
+        $("body").css("font-size", "90%");
+    }
+    else if(zoom >= 125) {
+        $("body").css("font-size", "120%");
+    }
+    else {
+        $("body").css("font-size", "140%");
+    }
 }
-else if(zoom >= 125) {
-    $("body").css("font-size", "120%");
-}
-var fz = $("body").css("font-size");
-console.log(fz);
+
+console.log($("body").css("font-size"));
+console.log(window.screen.width+'x'+height);

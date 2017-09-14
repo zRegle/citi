@@ -34,7 +34,7 @@ body {
 .navbar-right {
     font-size: 1em;
     margin-right: 10%;
-/*    transform: translateX(-50%);*/
+    /*    transform: translateX(-50%);*/
 }
 
 .navbar .navbar-header {
@@ -55,3 +55,15 @@ body {
     margin-right: 0;
 }
 
+.line-limit-length {
+    width: fit-content;
+    width: -moz-fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
+}
+
+.dropdown {
+    padding-left: 15px;
+    padding-right: 15px;
+}
