@@ -8,9 +8,9 @@
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
-    <link href="css/function3.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 
-    <title>function3</title>
+    <title>首页</title>
 
 </head>
 <body>
@@ -18,7 +18,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="home1.html">
+            <a class="navbar-brand" href="home.html">
                 <img alt="Brand" src="img/brand.png">
             </a>
         </div>
@@ -28,14 +28,14 @@
             <ul class="nav navbar-nav navbar-right">
 
 
-                <!--                <li><a href="home1.html">首页</a></li>-->
+<!--                <li><a href="home.html">首页</a></li>-->
                 <li>
                     <div>
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     产品介绍
-                                    <!-- <b class="caret"></b>-->
+                                   <!-- <b class="caret"></b>-->
                                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -61,11 +61,11 @@
                                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="function3.html">资产负债表</a></li>
-                                    <li><a href="function1.html">资产价值分布图</a></li>
-                                    <li><a href="function2.html">偏效应分析</a></li>
-                                    <!--                                    <li class="divider"></li>
-                                                                        <li><a href="#">分离的链接</a></li>-->
+                                    <li><a href="balance_sheet.html">资产负债表</a></li>
+                                    <li><a href="distribution_of_asset_value.html">资产价值分布图</a></li>
+                                    <li><a href="analysis_of_partial_effect.html">偏效应分析</a></li>
+<!--                                    <li class="divider"></li>
+                                    <li><a href="#">分离的链接</a></li>-->
                                 </ul>
                             </li>
                         </ul>
@@ -78,41 +78,71 @@
     </div>
 </nav>
 
-    <!-- 缩略图 -->
-    <div class="row" id="container">
-        <div class="col-xs-2 col-md-2"></div>
-        <!-- 图表 -->
-        <div class="col-xs-8 col-md-8">
-            <div id="title">资产负债表</div>
-
-            <div  id="table" class="table-responsive">
-                <table class="table">
-                    <tr><th colspan="4" class="table_tittle">新编资产负债表</th></tr>
-                    <tr><th colspan="4">单位：人民币百万元</th></tr>
-                    <tr><td>项目</td><td>金额</td><td>项目</td><td>金额</td></tr>
-                    <tr><td>资产</td><td></td><td>负债</td><td></td></tr>
-                    <tr><td>原资产负债表内总资产</td><td>5，942，311</td><td>原资产负债表内总负债</td><td>5，538，949</td></tr>
-                    <tr><td>债券</td><td>1，039，635</td><td>理财业务资金</td><td>2，375，766</td></tr>
-                    <tr><td>非标债权类资产</td><td>415，522</td><td>负债合计</td><td></td></tr>
-                    <tr><td>现金及银行存款</td><td>394，852</td><td>所有者权益</td><td></td></tr>
-                    <tr><td>货币市场工具</td><td>312，176</td><td>原资产负债表内所有者权益</td><td>403，362</td></tr>
-                    <tr><td>权益类资产</td><td>178，182</td><td>所有者权益合计</td><td>403，362</td></tr>
-                    <tr><td>其他</td><td>35，399</td><td></td><td></td></tr>
-                    <tr><td>资产合计</td><td>8，318，077</td><td>负债及所有者权益合计</td><td>8，318，077</td></tr>
-                </table>
+<!-- 巨幕 -->
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-xs-2 col-md-2">
+        </div>
+        <div class="col-xs-6 col-md-6" id="slogan_col">
+            <p><img src="img/Ignition.png" alt="Ignition"></p>
+            <div id="slogan">为影子带来光亮</div>
+            <div></div>
+            <div id="download">
+                <a class="btn btn-primary btn-lg" href="#" role="button">点我下载</a>
+                <p>(仅限win系统)</p>
             </div>
-
-            <div class="explain" id="explain1">
-                Ignition系统会根据您的经营数据重构资产负债表，如上图所示。
-            </div>
-
         </div>
     </div>
+</div>
+
+<!-- 缩略图 -->
+<div id="detail" class="row">
+    <div class="col-xs-6 col-md-3">
+        <a href="detail_instruction.html" class="thumbnail">
+            <img src="img/jianjie.jpg" alt="产品简介">
+            <div class="caption">
+                <div class="caption1">产品简介<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                <div class="caption2">了解产品详情</div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-6 col-md-3">
+        <a href="detail_guide.html" class="thumbnail">
+            <img src="img/xiangdao.jpg" alt="使用向导">
+            <div class="caption">
+                <div class="caption1">使用向导<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                <div class="caption2">使用步骤详解</div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-6 col-md-3">
+        <a href="detail_rate.html" class="thumbnail">
+            <img src="img/weiyuegailv.jpg" alt="违约概率分析">
+            <div class="caption">
+                <div class="caption1">违约概率分析<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                <div class="caption2">&nbsp;...</div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-6 col-md-3">
+        <a href="detail_lean.html" class="thumbnail">
+            <img src="img/pianxiaoying.jpg" alt="片效应分析">
+            <div class="caption">
+                <div class="caption1">偏效应分析<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                <div class="caption2">&nbsp;...</div>
+            </div>
+        </a>
+    </div>
+</div>
 
 
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/zoom.js"></script>
-
+<script>
+    if(zoom > 150 ) {
+        $('#download').css('margin-top','1em');
+    }
+</script>
 </body>
 </html>

@@ -1,25 +1,27 @@
 .header{
-    height: 42%;
     background-image: url("../img/team_02.jpg");
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .title{
-    padding-left: 4.5%;
+    padding-left: 5%;
     margin-top: 5%;
+    height: 100%;
 }
-
 .title .img-responsive {
     height: 8em;
 }
-
 .row{
     margin-right: 0;
 }
 .header-intro{
     color: white;
+    padding-left: 3.3%;
     font-size: 1.3em;
     margin-top: 3%;
+    margin-bottom: 3%;
     text-align: center;
+    height: 100%;
 }
 .angle{
     width: 50%;
@@ -77,6 +79,7 @@
 }
 .mem-photo{
     width: 90%;
+    height: 100%;
     border-radius: 10px;
 }
 .member{
