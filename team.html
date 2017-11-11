@@ -391,10 +391,11 @@
             //set all members info to default
             $(".avatar").css("width","22%");
             $(".members").css("display","none");
-            // //set the clicking avatar and its corresponding members info
+            //set the clicking avatar and its corresponding members info
             var group=$(this);
             group.css("width","26%");
             var id=group.attr("id");
+            //show the corresponding group
             switch (id){
                 case '1':
                     $("#design").fadeIn(300);
